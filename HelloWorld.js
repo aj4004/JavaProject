@@ -1,1 +1,1 @@
-alert("Hello world ");
+console.log('Hello, World! Node is working...');

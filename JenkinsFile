@@ -4,15 +4,14 @@ pipeline{
 		stage('Clone repository'){
 			steps{
 			    echo " checking out scm"
-			    checkout scm
 			}
 		}
 		stage('Build'){
-// 			node HelloWorld.js
-            steps{
-                echo "building"
-            }
-		}
+			steps{
+                		echo "building"
+				node HelloWorld.js
+     			}
+            	}
 		stage('FInal'){
 		    steps{
 			    echo "Everything done"

@@ -1,14 +1,21 @@
-node{
-	agent none
+pipeline{
+    agent none
 	stages{
 		stage('Clone repository'){
-			checkout scm
+			steps{
+			    echo "cloning"
+			}
 		}
 		stage('Build'){
-			node HelloWorld.js
+// 			node HelloWorld.js
+            steps{
+                echo "building"
+            }
 		}
 		stage('FInal'){
-			echo "Everything done"
+		    steps{
+			    echo "Everything done"
+		    }
 		}
 	}
 }

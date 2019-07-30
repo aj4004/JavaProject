@@ -6,7 +6,7 @@ public class HelloWorld {
     System.out.println("Hello  World! I am done except approval triggers");
   }
 
-  private static int add(int a,int b){
+  private static int add( int a,int b){
   	return (a+b);
   	
   }

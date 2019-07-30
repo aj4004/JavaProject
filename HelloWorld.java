@@ -5,7 +5,7 @@ public class HelloWorld {
     System.out.println("Adding "+ Integer.toString(num1) + " and "+ Integer.toString(num2) +" = "+ add(num1,num2) );
   }
 
-  private static int add(int a,int b){
+  private static int add( int a,int b){
   	return (a+b);
   	
   }
